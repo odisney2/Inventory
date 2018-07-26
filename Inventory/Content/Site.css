@@ -5,3 +5,46 @@
     border-top: 1px solid #ddd;
     text-align: center;
 }
+
+.p_font_style {
+    color: green;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.item_box{
+    border:1px solid red;
+    padding: 2px;
+    margin: 2px;
+}
+
+.p_font_style {
+    color: blue;
+    font-size: 1.0em;
+}
+
+@media (min-width: 600px)
+{
+    body,
+    footer {
+        background-color: lightblue;
+    }
+
+    .p_font_style {
+        color:aliceblue;
+        font-size: 1.2em;
+    }
+
+}
+
+@media (min-width: 900px) {
+    body,
+    footer {
+        background-color: white;
+    }
+
+    .p_font_style {
+        color: black;
+        font-size: 1.5em;
+    }
+}

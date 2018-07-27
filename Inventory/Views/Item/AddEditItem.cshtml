@@ -1,4 +1,17 @@
-﻿@model Inventory.Models.ItemViewModel
+﻿@*/*
+        Orris Disney II
+        C# Inventory Project
+        July 2018
+
+        Definition of a View
+        View is a user interface. View displays data from the model to the user and also enables them to modify the data
+
+        This is for the Item Add Item page.  This will setup the form to gather information from the user to add
+
+        The majority of the page layout is stored in the Shared/_Layout.cshtml file
+*/*@
+
+@model Inventory.Models.ItemViewModel
 @{
     var isEditMode = Model.ItemId != null;
     ViewBag.Title = isEditMode ? "Edit " + Model.DisplayName : "Add Item";

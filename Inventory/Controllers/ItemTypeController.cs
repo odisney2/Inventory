@@ -1,4 +1,17 @@
-﻿using Inventory.Models;
+﻿/*
+    Orris Disney II
+    C# Inventory Project
+    July 2018
+    
+    Definition of a Controller
+    Asp.net MVC Controllers are responsible for controlling the flow of the application execution. When you make a request (means request a page) 
+    to MVC application, a controller is responsible for returning the response to that request.
+
+    This is for the the Item Type part of the project.    This is where the Add/Edit/Delete related to Item Type happens and depend on what the user clicked on,
+    this is where the data is gathered, added, updated and/or deleted 
+*/
+
+using Inventory.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,7 +36,7 @@ namespace Inventory.Controllers
             {
                 var itemTypeList = new ItemTypeListViewModel
                 {
-                    //Convert each Person to a PersonViewModel
+                    //Convert each Item to a ItemViewModel
                     ItemTypes = InventoryContext.ItemTypes.Select(p => new ItemTypeViewModel
                     {
                         ItemTypeId = p.ItemTypeId,

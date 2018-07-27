@@ -1,4 +1,22 @@
-﻿@{
+﻿@*/*
+    Orris Disney II
+    C# Inventory Project
+    July 2018
+
+    Definition of a View
+    View is a user interface. View displays data from the model to the user and also enables them to modify the data
+
+    This is for the _Layout page. All the pages in this project will use this as the main part of the page and layouts.   
+    the @RenderBody() is where the specific type of view the user will see depending on what they clicked.  
+    It can be ItemDetail or ItemTypeDetail that will display information about a specific item or item type that the user selected
+    It can show form for the user to Add, edit and delete the specific information that they want to work with
+    This is where the navigation at the top is setup.
+
+    Contains links to include bootstrap for layouts and my custom CSS file as well
+
+*/*@
+
+@{
     Layout = null;
 }
 
@@ -15,32 +33,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-static-top navclass" >
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainMenu" aria-expanded="false" >
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-                @Html.ActionLink("Inventory", "Index", "Home", null, new { @class = "navbar-brand" })
-            </div>
-            <div class="collapse navbar-collapse" id="mainMenu">
-                <ul class="nav navbar-nav">
-                    <li class="item_box">
-                        @Html.ActionLink("Item", "Index", "Item")
-                    </li>
-                    <li class="item_box">
-                        @Html.ActionLink("Item Types", "Index", "ItemType")
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    @*<nav class="navbar navbar-light navbar-static-top">
+    <nav class="navbar navbar-static-top navclass">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainMenu" aria-expanded="false">
@@ -63,7 +56,8 @@
                 </ul>
             </div>
         </div>
-    </nav>*@
+    </nav>
+
     <hr />
 
     <div class="container">
